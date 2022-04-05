@@ -7,11 +7,9 @@ import { StationData } from "./services/station-data";
 import { useInterval } from "./hooks/useInterval";
 
 function App() {
-  // configs
   const zoom = 13;
   const mapCenter = [40.75081, -73.97354];
 
-  // hooks
   const [stations, setStations] = useState([]);
 
   useEffect(() => {
@@ -30,7 +28,6 @@ function App() {
   const useStyles = makeStyles({ App: { height: "100vh" } });
   const classes = useStyles();
 
-  // utilities
   const getColor = (available, capacity) => {
     const pct = available / capacity;
     if (pct === 0) return "#ef3c42";
@@ -46,7 +43,7 @@ function App() {
     if (0.9 < pct < 1) return "#a7d52a";
     if (pct === 1) return "#79c725";
   };
-  // render
+
   return (
     <div className={classes.App}>
       <StationMap stations={stations} zoom={zoom} mapCenter={mapCenter}>
@@ -60,7 +57,6 @@ function App() {
                 num_docks_available,
                 capacity
               }) => (
-                // how can we get this in and render as children?
                 <Circle
                   weight="10"
                   color={getColor(num_bikes_available, capacity)}
