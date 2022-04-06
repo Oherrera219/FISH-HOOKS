@@ -30,8 +30,8 @@ function App() {
 
   const getColor = (available, capacity) => {
     const pct = available / capacity;
-    if (pct === 0) return "#ef3c42";
-    if (0 < pct < 0.1) return "#f25e40";
+    if (pct === 0) return "#f25e40";
+    if (0 < pct < 0.1) return "#ef3c42";
     if (0.1 < pct < 0.2) return "#f2823a";
     if (0.2 < pct < 0.3) return "#f69537";
     if (0.3 < pct < 0.4) return "#ff4aa2f";
