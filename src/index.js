@@ -8,7 +8,7 @@ import { useInterval } from "./hooks/useInterval";
 
 function App() {
   const zoom = 13;
-  const mapCenter = [40.75081, -73.97354];
+  const mapCenter = [40.75081, -73.97j354];
 
   const [stations, setStations] = useState([]);
 
