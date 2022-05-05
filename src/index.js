@@ -46,7 +46,7 @@ function App() {
 
   return (
     <div className={classes.App}>
-      <h1>Citi Bikes in NYC</h1>
+      <h1>Citi Bikes in Manhattan</h1>
       <StationMap stations={stations} zoom={zoom} mapCenter={mapCenter}>
         {stations.length
           ? stations.map(

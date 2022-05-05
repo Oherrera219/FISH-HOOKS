@@ -7,9 +7,12 @@
 }
 
 div {
-  background-color: green;
+  background-color: pink;
   opacity: 0.3;
 }
 div {
-  background: rgba(0, 128, 0, 0.3); /* Green background with 30% opacity */
+  background: rgba(179, 30, 169, 0.3); /* Green background with 30% opacity */
+}
+.h1 {
+  color: pink;
 }
