@@ -25,7 +25,7 @@ function App() {
     setStations(stations);
   }, 30000);
 
-  const useStyles = makeStyles({ App: { height: "100vh" } });
+  const useStyles = makeStyles({ App: { height: "50vh" } });
   const classes = useStyles();
 
   const getColor = (available, capacity) => {
